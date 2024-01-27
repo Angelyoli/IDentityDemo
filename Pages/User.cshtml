@@ -1,0 +1,25 @@
+﻿@page
+@model IDentityDemo.Pages.UserModel
+@{
+
+}
+
+<h2 class="text-center">Welcome </h2>
+<div>
+    姓： @Model.appUser?.FirstName
+</div>
+<div>
+    名：@Model.appUser?.LastName
+</div>
+<div>
+    Email：@Model.appUser?.Email
+</div>
+<div>
+    电话:@Model.appUser?.PhoneNumber
+</div>
+<div>
+    地址：@Model.appUser?.Address
+</div>
+<div>
+    创建时间：@Model.appUser?.CreateAt.ToString("MM/dd/yyyy")
+</div>
